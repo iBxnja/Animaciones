@@ -1,0 +1,110 @@
+*{
+    transition-duration: 1s;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card1,
+.card2,
+.card3{
+    width: 300px;
+    height: 450px;
+    border-radius: 50px;
+    margin: 50px;
+    border: solid 2px white;
+    box-shadow: 0 0 15px black;
+    animation-name: movimiento;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@keyframes movimiento {
+    0%{
+      transform: translateY(0px);  
+    }
+    50%{
+        transform: translateY(30px);  
+    }
+    100%{
+        transform: translateY(0px);  
+    }
+}
+
+
+
+
+
+.card1{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(./Multimedia/paisaje1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card2{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(./Multimedia/paisaje2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card3{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(./Multimedia/paisaje3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card1:hover{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(./Multimedia/paisaje1.jpg);
+}
+.card2:hover{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(./Multimedia/paisaje2.jpg);
+}
+.card3:hover{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(./Multimedia/paisaje3.jpg);
+}
+.card1:hover,
+.card2:hover,
+.card3:hover{
+    width: 350px;
+    height: 500px;
+    border: solid 2px white;
+    box-shadow: 0 0 15px black;
+}
+.card1:hover h2,
+.card2:hover h2,
+.card3:hover h2{
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+
+h2{
+    font-size: 30px;
+    color: transparent;
+}
+.op1{opacity: 30%;transition-duration: 2s;}
+.op2{opacity: 50%;transition-duration: 1.5s;}
+.op3{opacity: 70%;transition-duration: 1s;}
+.op4{opacity: 50%;transition-duration: 1.5s;}
+.op5{opacity: 30%;transition-duration: 2s;}
+
